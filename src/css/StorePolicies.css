@@ -1,0 +1,38 @@
+/*Reset CSS Styles
+
+#code-of-conduct ul {
+    list-style-type: '-';
+    text-align: left;
+} */
+
+.policy-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.policy-title:first-child {
+    margin-top: 10px;
+}
+
+#violation-list, .policy-content {
+    text-align: center;
+}
+.policy-content-container{
+    /* display: block; */
+    text-align: justify;
+}
+
+.policy-content-middle {
+    white-space: pre-line;
+    margin: 5px;
+    font-size: .9em;
+}
+/* 
+.showdropdown > .policy-content-container {
+    display: block;
+} */
+
+.hide-for-mobile {
+    display: none;
+}

@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+@import "./css/Header.css";
+@import "./css/Footer.css";
+@import "./css/AboutUs.css";
+@import "./css/StorePolicies.css";
+@import "./css/ContactUs.css";
+@import "./css/WeeklyAd.css";
+
+/*Reset CSS Styles
+.page-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1.2em;
+    margin-bottom: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    font-size:3em;
+    body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-container {
+    width: 100%;
+}
+.page-title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: .2em;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size:5vw;
+    background-color: #3d9e56;
+}
+.page-info-container {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+    margin: 0;
+    background-color: #3d9e56;
+    color: #ffffff;
+
+}
+.page-info {
+    width: 58%;
+    margin: auto;
+    padding-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*/
+
+/* Color Palette
+white: #ffffff;
+88-green: #3d9e56;
+grey: #a9a9a9;
+black: #000000;
+*/
+
+ul, h1, h2, h3, li {
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.hide-for-mobile {
+    display: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* .App {
+    display: flex;
+    flex-direction: column;
+} */
+
+header {
+    order: 0;
+    /* flex: 0 1 auto; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-content {
+    width: 95vw;
+    order: 1;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    margin: 2vh 2vw 8vh 2vw;
 }
+
+footer {
+    z-index: 1;
+    order: 2;
+    flex: 0 1 40px;
+}
+
+.page-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 2px;
+}
+/* 
+.page-container {
+    height: 100%;
+    width: 100%;
+} */
+

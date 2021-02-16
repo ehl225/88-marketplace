@@ -1,0 +1,7 @@
+/* #weekly-ad-container {
+    overflow-x: hidden;
+} */
+.weekly-ad {
+    width: 95vw;
+    height: auto;
+}

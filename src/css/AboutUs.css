@@ -1,0 +1,78 @@
+
+/*
+
+#about-us-container {
+    content: "";
+    background-image: url("../images/BL5K4509edited.jpg");
+    background-size: cover;
+    opacity: 90%;
+}
+
+#about-us-title, #store-info-title {
+    padding-top: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1.3em;
+}
+
+.page-info{
+    width: 70%;
+    margin-left: 1.3em;
+    padding-bottom: 20px;
+
+}
+#store-info p, #store-info-title {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+#google-map {
+    display: block;
+
+    padding-bottom: 1.1em;
+}
+#store-info-container {
+    content: "";
+    background-image: url("/BL5K4509edited.jpg");
+    background-size: cover;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+*/
+/* #store-info-container {
+    content: "";
+    background-size: cover;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#store-info-container p, #store-info-title {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin-left: 1.3em;
+    font-size: 1.2em;
+}
+
+#store-info-title {
+    padding-top: 1.2em;
+    text-transform: uppercase;
+}
+
+#google-map {
+    display: block;
+    padding-bottom: 1.1em;
+} */
+
+.page-info, .store-info {
+    text-align: center;
+}
+
+#google-map {
+    margin-bottom: 5px;
+    padding: 5px;
+}
