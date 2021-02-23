@@ -64,23 +64,3 @@ class StorePolicies extends React.Component {
     }
 }
 export default StorePolicies;
-   
-            // handleToggle(policyId) {
-            //     let updateToggle = this.state.policyArray[policyId].toggle ? false : true;
-            //     this.setState( prevState => ({
-            //         policyArray : prevState.policyArray}))
-            // }
-        
-            // handleChange(event) {
-            //     event.preventDefault();
-            //     let policyId = event.target.getAttribute("id");
-            //     console.log(policyId);
-            //     let value = this.handleToggle(policyId);
-            //     let policy = document.getElementById(`content-${policyId}`);
-            //     if (value) {
-            //         policy.classList.remove("hide-for-mobile");
-            //         console.log("it worked");
-            //        } else {
-            //            policy.classList.add("hide-for-mobile");
-            //        }
-            // }

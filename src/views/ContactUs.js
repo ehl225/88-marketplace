@@ -8,12 +8,12 @@ class ContactUs extends React.Component {
                 <h1 className="page-title" id="contact-us-title">Contact Us</h1>
                         <p className="ways-to-contact">{waysToContact}</p>
 
-                <div id="form-section-container">
+                <div id="contact-form-container">
                     <form id="contact-form">
-                        <div id="form-inner-contact"> 
+                        {/* <div id="form-inner-contact"> 
                             <p>{email}</p>
                             <p>{phone}</p>
-                        </div>
+                        </div> */}
                         {/* <label className="contact-form-label" for="first-name">First Name</label> */}
                         <input className="contact-form-input" type="text" id="first-name" name="first-name" placeholder="First Name" required />
                         {/* <label className="contact-form-label" for="last-name">Last Name</label> */}
@@ -23,13 +23,13 @@ class ContactUs extends React.Component {
                         {/* <label className="contact-form-label" for="reason">Reason for Contact</label> */}
                         <select className="contact-form-input" id="reason-for-contact" name="reason">
                             <option id="reason-placeholder" value="" disabled selected hidden>Reason for Contact</option>
-                            <option value="work">I am interested in working with you.</option>
-                            <option value="customer">I have customer feedback.</option>
+                            <option value="work">I am interested in working with you</option>
+                            <option value="customer">I have customer feedback</option>
                             <option value="other">Other</option>
                         </select>
                         {/* <label for="message">Message</label> */}
-                        <input className="contact-form-input" type="textarea" id="contact-message" name="message" placeholder="Enter your message here" required />
-                        <button id="contact-form-button">Contact Us</button>
+                        <textarea className="contact-form-input" id="contact-message" name="message" placeholder="Enter your message here" required></textarea>
+                        <button id="contact-form-button">Submit</button>
                     </form>
                 </div>
  

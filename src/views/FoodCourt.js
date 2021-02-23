@@ -5,7 +5,7 @@ import bbqking_logo from '../images/food_court_pictures/bbqking_logo.png';
 import chiuquonbakery_logo from '../images/food_court_pictures/chiuquonbakery_logo.png';
 import cropculture_logo from '../images/food_court_pictures/cropculture_logo.png';
 import dama_logo from '../images/food_court_pictures/dama_logo.png';
-
+import coming_soon_logo from '../images/food_court_pictures/coming-soon-logo.png';
 
 const vendors = [
     {
@@ -46,7 +46,7 @@ const vendors = [
     },
     {
         name: "Fat Tiger",
-        logo: "",
+        logo: coming_soon_logo,
         website: null,
         instagram: null,
         facebook: null
@@ -59,9 +59,11 @@ class FoodCourt extends React.Component {
         return (
             <div className="page-container" id="food-court-container">
                 <h1 className="page-title">Satisfy Your Cravings</h1>
+                <div id="vendor-list-container">
                 {vendors.map((vendor, index) => {
-                    return < Vendor key={index} name={vendor.name} instagram={vendor.instagram} facebook={vendor.facebook} logo={vendor.logo}/>
+                    return < Vendor key={index} name={vendor.name} logo={vendor.logo} website={vendor.website} instagram={vendor.instagram} facebook={vendor.facebook} />
                 })}
+                </div>
             </div>
         )
     }

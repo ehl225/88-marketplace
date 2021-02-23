@@ -49,7 +49,7 @@ class Header extends React.Component {
     
     displayNavigation() {
         let hamburgerButton = document.querySelector("#nav-toggle-bar");
-        let navMenu = document.querySelector(".nav-items-wrapper");
+        let navMenu = document.querySelector(".nav-items-container");
         let overlay = document.querySelector(".overlay");
         if (this.state.isToggleOn) {
             hamburgerButton.classList.add("open");
@@ -80,7 +80,7 @@ class Header extends React.Component {
                     <span className="hamburger"></span>
                 </a>
             </div>
-                <nav className="nav-items-wrapper hide-for-mobile" onClick={this.handleToggle} >
+                <nav className="nav-items-container hide-for-mobile" onClick={this.handleToggle} >
                     {navlinks}
                 </nav>
                 <div className="overlay hide-for-mobile" onClick={this.handleToggle}></div>

@@ -9,24 +9,31 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+    /* border-bottom: 1px solid #3d9e56; */
+    /* font-size: inherit; */
 }
 
 .policy-title:first-child {
     margin-top: 10px;
 }
 
-#violation-list, .policy-content {
+.policy-content {
     text-align: center;
+    /* font-size: inherit; */
+
 }
 .policy-content-container{
     /* display: block; */
     text-align: justify;
 }
 
+.policy-content-end {
+    /* font-size: inherit; */
+}
 .policy-content-middle {
     white-space: pre-line;
     margin: 5px;
-    font-size: .9em;
+    /* font-size: inherit; */
 }
 /* 
 .showdropdown > .policy-content-container {

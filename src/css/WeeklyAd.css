@@ -5,3 +5,8 @@
     width: 95vw;
     height: auto;
 }
+
+#weekly-ad-subtitle {
+    text-align: center;
+    font-style: italic;
+}

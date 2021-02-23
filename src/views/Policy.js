@@ -32,9 +32,9 @@ export class Policy extends React.Component {
             <div className="policy-item" key={this.props.index}>
                 <h3 className = "policy-title" key={this.props.index} id={this.props.index} onClick={this.handleClick}>{this.props.title}</h3>
                 <div className="policy-content-container" key={`content-${this.props.index}`} id={`content-${this.props.index}`}>
-                    <p key={`p1-${this.props.index}`}>{this.state.showPolicy ? this.props.content : ""}</p>
+                    <p key={`p1-${this.props.index}`} className="policy-content">{this.state.showPolicy ? this.props.content : ""}</p>
                     <p key={`p2-${this.props.index}`} className="policy-content-middle">{this.state.showPolicy ? this.props.contentMiddle : ""}</p>
-                    <p key={`p3-${this.props.index}`}>{this.state.showPolicy ? this.props.contentEnd : ""}</p>
+                    <p key={`p3-${this.props.index}`} className="policy-content-end">{this.state.showPolicy ? this.props.contentEnd : ""}</p>
                 </div>
             </div>
         )

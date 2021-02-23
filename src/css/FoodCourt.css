@@ -1,3 +1,24 @@
+.vendor-list-container {
+    display: flex;
+    flex-direction: column;
+}
+.vendor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+.vendor-name {
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    min-height: 35px;
+    background: #3d9e55c7;
+    color: #ffffff;
+}
+.vendor-logo {
+    width: 80vw;
+    height: auto;
+}
 
 
