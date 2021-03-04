@@ -9,20 +9,23 @@ class AboutUs extends React.Component {
     render() {
         return (
             <div  className="page-container" id="about-us-container">
-                <h1 className="page-title" id="about-us-title">About 88!</h1>
-                <div className="page-info-container" >
-                <img src={BL5K4509} id="jefferson-image" />
+                <div className="background-overlay"></div>
+                <div className="about-us-info overlay-top" >
+                <h1 className="page-title overlay-top" id="about-us-title">About 88!</h1>
+                {/* <img src={BL5K4509} id="jefferson-image" alt="Jefferson Building" /> */}
 
-                    <p className="page-info">{about}</p>
+                    <p className="about-us-inner-info overlay-top">{about}</p>
                 </div>
-                <div className="store-info" id="store-info-container">
-                    <h2 className="store-info" id="store-info-title">Hours &amp; Location</h2>
-                    <p className="store-info" id="about-address">{address} <span id="second-floor">(second floor)</span></p>
-                    <p className="store-info" id="about-parking">{parking}</p>
-                    <p className="store-info" id="about-hours">{hours}</p>
-                    <p className="store-info" id="about-email">{email}</p>
-                    <p className="store-info" id="about-phone">{phone}</p>
-                    <iframe id="google-map" title="google-map" src={googleMapLink} width="350" height="250" frameBorder="0" style={{border:0}} allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
+                <div className="store-info overlay-top" id="store-info-container">
+                    <div className="store-inner-info">
+                    <h2 className="store-info overlay-top" id="store-info-title">Hours &amp; Location</h2>
+                    <p className="store-info overlay-top" id="about-address">{address} <span id="second-floor">(second floor)</span></p>
+                    <p className="store-info overlay-top" id="about-parking">{parking}</p>
+                    <p className="store-info overlay-top" id="about-hours">{hours}</p>
+                    <p className="store-info overlay-top" id="about-email">{email}</p>
+                    <p className="store-info overlay-top" id="about-phone">{phone}</p>
+                    </div>
+                    <iframe className="overlay-top" id="google-map" title="google-map" src={googleMapLink} width="350" height="250" frameBorder="0" style={{border:0}} allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
                 </div>
             </div>
         )

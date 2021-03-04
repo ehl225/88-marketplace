@@ -12,7 +12,9 @@ const yelpLink = 'https://www.yelp.com/biz/88-marketplace-chicago-4';
 class Footer extends React.Component {
     render() {
         return (
+            <footer>
             <div className="footer-container">
+                <div className="table-footer-container">
                 <table className="table-footer">
                     <thead>
                         <tr>
@@ -37,12 +39,14 @@ class Footer extends React.Component {
                         </tr>
                     </tbody>
                 </table>
+                </div>
                 <div className="social-media">
                     <a href={facebookLink}><img className="social-media-icon" src={fbLogo} alt="Facebook logo" /></a>
                     <a href={instagramLink}><img className="social-media-icon" src={igLogo} alt="Instagram logo" /></a>
                     <a href={yelpLink}><img className="social-media-icon" src={yelpLogo} alt="Yelp logo" /></a>
                 </div>
             </div>
+            </footer>
         )
     }
 }

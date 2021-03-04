@@ -56,7 +56,7 @@ class StorePolicies extends React.Component {
                 <h1 className="page-title" id="store-policies-title">Store Policies</h1>
                 {policies.map((policy, index) => {
                    return (
-                   <Policy  title={policy.title} index={index} content={policy.content} contentMiddle={policy.contentMiddle} contentEnd={policy.contentEnd}/>
+                   <Policy  key={`policy-${index}`}title={policy.title} index={index} content={policy.content} contentMiddle={policy.contentMiddle} contentEnd={policy.contentEnd}/>
                         )
                 })}
             </div>

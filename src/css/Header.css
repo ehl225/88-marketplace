@@ -1,96 +1,16 @@
-/*Reset CSS Styles
 header {
-    position: relative;
-    background-color: rgb(75, 157, 97);
-    color: rgb(255,255,255);
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Roboto', sans-serif;
-}
-
-.header-menu li a {
-    font-size: 1.4em;
-    color: rgb(255,255,255);
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px 20px 20px 2px;
-    margin: 50px 20px 12px 0px;   
-header {
-    position: relative;
-    color: rgb(98, 100, 99);
-    background-color: #ffffff;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Roboto', sans-serif;
-}
-
-#header-logo {
-    margin: 0;
-    padding: 0;
-    width: 20vw;
-    height: auto;
-    align-self: flex;
-}
-.header-menu {
-    display: inline-flex;
-}
-
-.header-menu li:last-of-type {
-    border-right: none;
-    }
-
-
-.nav-items-wrapper {
-    float: right;
-    margin: 10px;
-    line-height: .5rem;
-    display: inline-flex;
-    
-}
-.header-menu li {
-   list-style-type: none; 
-   display: inline-flex;
-   border-right: 1px solid #000000;
-   align-self: flex-end;
-   }
-
-.header-menu li a {
-    font-size: 1.2rem;
-    color: rgb(70, 72, 77);
-    color: rgb(98, 100, 99);
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 10px; 
-}
-
-
-ul li a:visited, u li a:hover {
-    text-decoration: none;
-}
-}
-
-*/
-
-
-header {
-    /* order: 0; */
-    height: 98px;
+    height: 90px;
     width: 100vw;
-    /* overflow: wrap; */
-    /* display: flex; */
     position: fixed;
+    top: 0;
     border-bottom: 1.5px solid #a9a9a9;
-    /* justify-content: center; */
     z-index: 80;
     background: #3d9e56;
+    border-bottom: none;
+    border-bottom: 5px solid #3d9e56;
 }
 
-
-.header-menu {
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,10 +19,9 @@ header {
     height: 100%;
 }
 
-
 #header-logo {
-    max-width: 199px;
-    width: 100px;
+    max-width: 200px;
+    width: 120px;
     height: auto;
     margin-left: 15px;
     margin-top:5px;
@@ -138,7 +57,7 @@ header {
 
 .overlay {
     position: fixed;
-    top: 100px;
+    top: 90px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -148,71 +67,68 @@ header {
     transition: all 150ms ease-in-out 0s;
 }
 
-
 .display-nav-for-mobile {
     position: fixed;
     margin: 0 auto;
-    top: 99px;
-    /* width: 80vw; */
+    top: 89px;
     width: 100%;
     background: #ffffff;
     z-index: 5;
     display: flex;
-    flex-flow: column wrap; 
-    overflow: wrap;
-    /* border-radius: 2%; */
+    flex-flow: column; 
     transition: all 500ms ease-in-out 0s;
 }
-
 
 .nav-items-container a {
     display: flex;
     width: 100%;
     list-style-type: none; 
     text-transform: uppercase;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     justify-content: center;
     text-align: center;
-    margin: 0;
     text-decoration: none;
     color: #000000;
 }
-
-.nav-items-container a:first-child {
-    padding-top: 20px;
+.nav-items-container a:hover {
+    background: #a8d8b4;
 }
 
-/* .nav-items-wrapper {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    border: 1px solid black;
-} */
+.nav-items-container a:active {
+    color: #ffffff;
+}
 
-/* 
 @media only screen and (min-width: 901px) {
-    .hamburger {
-        display: none;
+    header {
+        background: #ffffff;
+        height: auto;
+        transition: all 500ms ease-in-out 0s;
     }
-    .header-menu {
-        display: inline-flex;
+    .header-container {
+        align-items: baseline;
+    }
+    
+    #header-logo {
+        width: 1000px;
+        margin: 5px 0 0 50px;
+    }
+
+    #nav-toggle-bar {
+        display: none;
     }
 
     .nav-items-container {
-        display: flex;
+        display: flex !important;
+        margin-top: 50px;
     }
-} */
 
-/* Breakpoints */
-/* Extra small devices (phones, 600px and down) 
-@media only screen and (max-width: 600px) {...}
-*/
-
-/* Small devices (portrait tablets and large phones, 600px and up) 
-@media only screen and (min-width: 600px) {...}
-*/
+    .nav-items-container a {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 1.3em;
+    }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -228,11 +144,11 @@ header {
         display: none;
     }
 
-    .nav-items-wrapper {
+    .nav-items-container {
         margin: 5px;
     }
     
-    .nav-items-wrapper li {
+    .nav-items-container li {
         list-style-type: none; 
         display: inline-flex;
         border-right: 1px solid #000000;
@@ -250,32 +166,12 @@ header {
         border-right: none;
         }
     
-    .nav-items-wrapper li a:visited, .nav-items-wrapper li a:hover {
+    .nav-items-container li a:visited, .nav-items-container li a:hover {
         text-decoration: none;
     }
 
 } */
 
-/* Large devices (laptops/desktops, 992px and up) 
-@media only screen and (min-width: 992px) {...}
-*/
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...}
-
-
-@media (min-width: 64em) {
-
-} */
-
-/* Visibility
-.hide-for-mobile {
-    
-}
-.hide-for-desktop {
-    
-}
- */
 /* 
 .header-menu {
     display: flex;
@@ -292,11 +188,8 @@ header {
     transform: translateY(5px);
 }
 
-.nav-items-wrapper {
-    margin: 5px;
-}
 
-.nav-items-wrapper li {
+.nav-items-container li {
     list-style-type: none; 
     display: inline-flex;
     border-right: 1px solid #000000;
@@ -315,7 +208,7 @@ header {
     border-right: none;
     }
 
-.nav-items-wrapper li a:visited, .nav-items-wrapper li a:hover {
+.nav-items-container li a:visited, .nav-items-container li a:hover {
     text-decoration: none;
 }
  */
@@ -360,10 +253,10 @@ header {
         background-color:rgb(209, 110, 206);
     }
     
-    .nav-items-wrapper {
+    .nav-items-container {
         display: none;
     }
-    .nav-items-wrapper.dropdown {
+    .nav-items-container.dropdown {
         display: flex;
         flex-flow: column wrap;
         position: relative;

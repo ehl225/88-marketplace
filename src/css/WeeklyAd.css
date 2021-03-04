@@ -1,12 +1,26 @@
-/* #weekly-ad-container {
-    overflow-x: hidden;
-} */
+
 .weekly-ad {
     width: 95vw;
+    margin: auto;
     height: auto;
 }
 
-#weekly-ad-subtitle {
+#weekly-ad-title, #weekly-ad-subtitle {
+    margin-top: 20px;
     text-align: center;
-    font-style: italic;
+}
+
+@media only screen and (min-width: 901px) {
+    #weekly-ad-title {
+        margin: 30px 0 30px 0;
+        padding: 20px;
+        color: #ffffff;
+        background: #3d9e55c7;
+        background: #3d9e56;
+    }
+    .weekly-ad {
+        max-width: 70vw;
+        display: block;
+        margin-left: auto;
+    }
 }

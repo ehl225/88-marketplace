@@ -1,5 +1,6 @@
 import React from 'react';
-
+import leaf from '../images/leaf.png';
+import leaf_right from '../images/leaf_right.png';
 
 export class Policy extends React.Component {
     constructor(props) {
@@ -15,8 +16,7 @@ export class Policy extends React.Component {
     
     
     handleClick() {
-        this.setState(({ showPolicy : !(this.state.showPolicy) })
-      , () => console.log(this.state.showPolicy));
+        this.setState(({ showPolicy : !(this.state.showPolicy) }));
       this.handleChange();
     }
         
@@ -30,7 +30,7 @@ export class Policy extends React.Component {
     render() {
         return (
             <div className="policy-item" key={this.props.index}>
-                <h3 className = "policy-title" key={this.props.index} id={this.props.index} onClick={this.handleClick}>{this.props.title}</h3>
+                <h4 className="policy-title" key={this.props.index} id={`policy-${this.props.index}`} onClick={this.handleClick}><span><img src={leaf} alt="Leaf" className="leaf"/></span><span className="policy-title-item">{this.props.title}</span><span><img src={leaf_right} alt="Leaf" className="leaf"/></span></h4>
                 <div className="policy-content-container" key={`content-${this.props.index}`} id={`content-${this.props.index}`}>
                     <p key={`p1-${this.props.index}`} className="policy-content">{this.state.showPolicy ? this.props.content : ""}</p>
                     <p key={`p2-${this.props.index}`} className="policy-content-middle">{this.state.showPolicy ? this.props.contentMiddle : ""}</p>
@@ -42,13 +42,3 @@ export class Policy extends React.Component {
 }
 
 export default Policy;
-
-// this.state.policies.map((policy, index) => { 
-//     <div className="policy-item" key={index}>
-//         <h2 className = "policy-title" key={index} id={index} onClick={this.handleChange}>{policy.title}</h2>
-//         <div className="policy-content-container hide-for-mobile" id={`content-${index}`}>
-//             <p className = "policy-content">{policy.content}</p>
-//             <p className = "policy-content" id="policy-content-middle">{policy.contentMiddle}</p>
-//             <p className = "policy-content">{policy.contentEnd}</p>
-//         </div>
-//     </div>

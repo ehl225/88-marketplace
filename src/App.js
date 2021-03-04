@@ -22,7 +22,6 @@ function App() {
       <div className="main-content">
       <Switch>
         <Route exact path="/" component={Home} />
-        {/* <Route path="/navigation" component={Navigation} /> */}
         <Route path="/about-us" component={AboutUs} />
         <Route path="/store-policies" component={StorePolicies} />
         <Route path="/weekly-ad" component={WeeklyAd} />
@@ -30,9 +29,7 @@ function App() {
         <Route path="/contact-us" component={ContactUs} />
       </Switch>
       </div>
-      <footer>
       <Footer />
-      </footer>
     </div>
   );
 }

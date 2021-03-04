@@ -1,84 +1,75 @@
-
-/*
-
-#about-us-container {
-    content: "";
-    background-image: url("../images/BL5K4509edited.jpg");
-    background-size: cover;
-    opacity: 90%;
+#about-us-title {
+    margin-top: 20px;
 }
 
-#about-us-title, #store-info-title {
-    padding-top: 1.2em;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 1.3em;
-}
-
-.page-info{
-    width: 70%;
-    margin-left: 1.3em;
-    padding-bottom: 20px;
-
-}
-#store-info p, #store-info-title {
+.about-us-info, .store-info {
     text-align: left;
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-}
-
-#google-map {
-    display: block;
-
-    padding-bottom: 1.1em;
-}
-#store-info-container {
-    content: "";
-    background-image: url("/BL5K4509edited.jpg");
-    background-size: cover;
-    background-size: contain;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-*/
-/* #store-info-container {
-    content: "";
-    background-size: cover;
-    background-size: contain;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-#store-info-container p, #store-info-title {
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    margin-left: 1.3em;
-    font-size: 1.2em;
-}
-
-#store-info-title {
-    padding-top: 1.2em;
-    text-transform: uppercase;
-}
-
-#google-map {
-    display: block;
-    padding-bottom: 1.1em;
-} */
-
-.page-info, .store-info {
-    text-align: center;
-}
-
-#jefferson-image {
-    width: 100%;
-    height: auto;
 }
 
 #google-map {
     margin: 5px;
     padding: 5px;
     text-align: center;
+}
+
+@media only screen and (min-width: 901px) {
+    #about-us-container {
+        height: 100%;
+        background-image: url("../images/BL5K4509edited.jpg");
+        background-size: 100% auto;
+        opacity: 90%;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 200px;
+    }
+    .background-overlay {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: inherit;
+        background: #000000;
+        opacity: 0.6;
+        z-index: 1;
+    }
+    .overlay-top {
+        position: relative;
+        z-index: 3;
+        color: white;
+    }
+    .about-us-info, #store-info-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us-inner-info {
+        line-height: 1.5em;
+        max-width: 30vw;
+        font-size: 1.3em;
+        padding-top: 60px;
+    }
+     /* #about-us-title, .about-us-inner-info, .store-inner-info, #google-map {
+        margin: 38px 20px 10px 10px;
+    }
+    */
+    #about-us-title, .about-us-inner-info {
+        margin-left: 80px;
+    } 
+    
+    .about-us-info, .store-info, #google-map {
+        text-align: left;
+        margin-left: 35px;
+    }
+
+    .store-info {
+        font-size: 1.1em;
+    }
+    #about-us-title {
+        font-size: 3.5em;
+        padding-top: 20px;
+    }
+    #store-info-title {
+        font-size: 1.5em;
+        padding-top: 20px;
+    }
 }
