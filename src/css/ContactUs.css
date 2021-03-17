@@ -35,7 +35,37 @@
 #reason-placeholder {
     color: #e6e6e6;
 }
+#contact-us-container {
+    position: relative;
+    height: 100%;
+    background-image: url("../images//Jefferson_Square_Photos\ -\ AJ/BL5K4556edited.jpg");
+    background-size: auto 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    text-align: center;
+}
+.background-overlay {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: inherit;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 1;
+}
 
+#contact-us-title, .ways-to-contact, #contact-form, .contact-form-input, #contact-form-button {
+    position: relative;
+    z-index: 5;
+}
+#contact-us-title, .ways-to-contact {
+    margin: 0 auto 0 auto;
+    padding: 10px 10px 30px 10px;
+    color: #ffffff;
+    text-align: center;
+    max-width: 400px;
+}
 
 @media only screen and (min-width: 901px ) {
     #contact-us-container {

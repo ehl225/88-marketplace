@@ -86,7 +86,8 @@ html, body {
 
 @media only screen and (min-width: 901px) {
     .main-content {
-        /* bottom: 160px; */
+        margin: 0;
+        top: 110px;
         flex-grow: 1;
         position: relative;
         padding-bottom: 50px;

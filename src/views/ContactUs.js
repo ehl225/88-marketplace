@@ -1,5 +1,4 @@
 import React from 'react';
-// import { email, phone } from '../App.js';
 const waysToContact = "Hello! If you would like to get in touch with us, please fill out the form below. We will get back to you as soon as possible. Alternatively, you can call or stop by in person.";
 class ContactUs extends React.Component {
     render() {
@@ -10,10 +9,6 @@ class ContactUs extends React.Component {
                         <p className="ways-to-contact">{waysToContact}</p>
                 <div id="contact-form-container">
                     <form id="contact-form">
-                        {/* <div id="form-inner-contact"> 
-                            <p>{email}</p>
-                            <p>{phone}</p>
-                        </div> */}
                         <input className="contact-form-input" type="text" id="first-name" name="first-name" placeholder="First Name" required />
                         <input className="contact-form-input" type="text" id="last-name" name="last-name" placeholder="Last Name" required />
                         <input className="contact-form-input" type="email" id="email" name="email" placeholder="Email"required />

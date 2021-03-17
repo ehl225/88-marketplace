@@ -117,7 +117,7 @@ class Header extends React.Component {
             <header >
             <div className="header-container">
                 <a href="/">
-                    <span><img id="header-logo" src={WHITE_88_ONLY} alt="88 Marketplace Logo" /></span>
+                    <span><img class="switch-logo" id="header-logo" src={WHITE_88_ONLY} alt="88 Marketplace Logo" /></span>
                 </a>
                 <a href="#top" id="nav-toggle-bar" onClick={this.handleToggle} >
                     <span className="hamburger"></span>
