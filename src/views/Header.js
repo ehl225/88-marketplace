@@ -65,6 +65,7 @@ class Header extends React.Component {
         let navMenu = document.querySelector(".nav-items-container");
         let overlay = document.querySelector(".overlay");
         if(this.state.screenWidth > 900) {
+
             navMenu.classList.remove("display-nav-for-mobile");
             navMenu.classList.add("hide-toggle");
             overlay.classList.add("hide-for-mobile");
@@ -116,7 +117,7 @@ class Header extends React.Component {
             <header >
             <div className="header-container">
                 <a href="/">
-                    <span><img id="header-logo" src={HORZ_88_FINAL} alt="88 Marketplace Logo" /></span>
+                    <span><img id="header-logo" src={WHITE_88_ONLY} alt="88 Marketplace Logo" /></span>
                 </a>
                 <a href="#top" id="nav-toggle-bar" onClick={this.handleToggle} >
                     <span className="hamburger"></span>
