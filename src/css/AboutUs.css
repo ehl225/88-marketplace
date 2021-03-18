@@ -1,15 +1,21 @@
 #about-us-title {
-    margin-top: 20px;
+    margin: 20px 5px 15px 5px ;
+}
+
+.about-us-inner-info {
+    margin: 0 5px 0 5px;
 }
 
 .about-us-info, .store-info {
-    text-align: left;
+    text-align: justify;
+    margin: 10px;
 }
 
 #google-map {
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
     text-align: center;
+    
 }
 #about-us-container {
     height: 100%;
@@ -20,6 +26,7 @@
     flex-direction: column;
     padding-bottom: 200px;
 }
+
 .background-overlay {
     position: absolute;
     padding: 0;

@@ -1,6 +1,7 @@
 
 .weekly-ad {
-    width: 95vw;
+    max-width: 95vw;
+    display: block;
     margin: auto;
     height: auto;
 }
@@ -20,7 +21,6 @@
     }
     .weekly-ad {
         max-width: 70vw;
-        display: block;
         margin-left: auto;
     }
 }
