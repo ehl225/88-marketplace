@@ -1,3 +1,13 @@
+
+@import "./css/Header.css";
+@import "./css/Footer.css";
+@import "./css/Home.css";
+@import "./css/AboutUs.css";
+@import "./css/StorePolicies.css";
+@import "./css/ContactUs.css";
+@import "./css/WeeklyAd.css";
+@import "./css/FoodCourt.css";
+
 /* Color Palette
 white: #ffffff;
 88-green: #3d9e56;
@@ -51,14 +61,6 @@ table {
 
 /*End Reset */
 
-@import "./css/Header.css";
-@import "./css/Footer.css";
-@import "./css/Home.css";
-@import "./css/AboutUs.css";
-@import "./css/StorePolicies.css";
-@import "./css/ContactUs.css";
-@import "./css/WeeklyAd.css";
-@import "./css/FoodCourt.css";
 
 body, .main-content {
     overflow-y: scroll;
