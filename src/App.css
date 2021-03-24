@@ -1,13 +1,4 @@
 
-@import "./css/Header.css";
-@import "./css/Footer.css";
-@import "./css/Home.css";
-@import "./css/AboutUs.css";
-@import "./css/StorePolicies.css";
-@import "./css/ContactUs.css";
-@import "./css/WeeklyAd.css";
-@import "./css/FoodCourt.css";
-
 /* Color Palette
 white: #ffffff;
 88-green: #3d9e56;
@@ -30,9 +21,9 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -54,12 +45,22 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
+/* table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} */
 
 /*End Reset */
+
+
+@import "./css/Header.css";
+@import "./css/Footer.css";
+@import "./css/Home.css";
+@import "./css/AboutUs.css";
+@import "./css/StorePolicies.css";
+@import "./css/ContactUs.css";
+@import "./css/WeeklyAd.css";
+@import "./css/FoodCourt.css";
 
 
 body, .main-content {
@@ -118,5 +119,8 @@ html, body {
         position: relative;
         padding-bottom: 90px;
         width: 100%;
+    }
+    .page-title {
+        font-size: 1.8rem;
     }
 }

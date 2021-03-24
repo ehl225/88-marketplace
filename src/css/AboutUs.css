@@ -15,7 +15,7 @@
     width: 100%;
     height: inherit;
     background: #000000;
-    opacity: 0.6;
+    opacity: 0.7;
     z-index: 1;
 }
 .overlay-top {
@@ -25,7 +25,7 @@
 }
 
 #about-us-title {
-    margin: 20px 5px 15px 5px ;
+    margin: 20px 5px 15px 5px;
 }
 
 .about-us-inner-info {
@@ -36,13 +36,13 @@
     text-align: justify;
     margin: 10px;
 }
-/*
+
 #google-map {
     margin: 15px;
     padding: 5px;
     text-align: center;
 }
-*/
+
 @media only screen and (min-width: 901px) {
     #about-us-container {
         height: 100%;
@@ -104,4 +104,11 @@
         font-size: 1.5em;
         padding-top: 20px;
     }
+
+    #google-map {
+        margin: 30px;
+        padding: 5px;
+        text-align: center;
+    }
+    
 }
