@@ -9,9 +9,9 @@ export default class Vendor extends React.Component {
     render() {
         return (
             <div className="vendor">
-                <h2 className="vendor-name">{this.props.name}</h2>
+                {/* <h2 className="vendor-name">{this.props.name}</h2> */}
                 <div className="vendor-content">
-                <a href={this.props.website} target="_blank" rel="noreferrer"><img className="vendor-logo" src={this.props.logo} alt={`${this.props.name} Logo`} /></a>
+                <a href={this.props.website} className="vendor-link" target="_blank" rel="noreferrer"><img className="vendor-logo" src={this.props.logo} alt={`${this.props.name} Logo`} /></a>
                 {/* <section className="vendor-images">
                     {this.props.images.map((image) => {
                         return <img src={image} alt="Business images" />

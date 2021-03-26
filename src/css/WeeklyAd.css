@@ -3,11 +3,12 @@
     max-width: 95vw;
     display: block;
     margin: auto;
+    padding-top: 20px;
     height: auto;
 }
 
 #weekly-ad-title, #weekly-ad-subtitle {
-    margin-top: 20px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -21,6 +22,8 @@
     }
     .weekly-ad {
         max-width: 70vw;
-        margin-left: auto;
+        margin: auto;
+        padding-bottom: 20px;
+    
     }
 }

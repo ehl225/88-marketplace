@@ -31,13 +31,14 @@ export default class Covid extends React.Component {
     render() {
         return (
             <div className="covid-procedures">
-                <p>88 Marketplace prides itself in being Chicago's largest Asian supermarket and we do our best to maintain and ensure a great experience for everyone that comes and visits us.</p>
-                <p>Our customer's safety is our main concern here at 88 and standard state COVID-19 procedures will be followed in order to ensure the best experience possible for all of our guests. These include but are not limited to:​</p>
+                <h2 className="covid-procedures-title">Your Safety &amp; Covid</h2>
+                <p className="procedure-info">88 Marketplace prides itself in being Chicago's largest Asian supermarket and we do our best to maintain and ensure a great experience for everyone that comes and visits us.</p>
+                <p className="procedure-info">Our customer's safety is our main concern here at 88 and standard state COVID-19 procedures will be followed in order to ensure the best experience possible for all of our guests. These include but are not limited to:​</p>
                 {covidProcedures.map((procedure, index) => {
                     return (
                         <div className="procedure" key={`procedure-${index}`}>
                             <img src={procedure.img} alt="Procedure" />
-                            <span><p>{procedure.description}</p></span>
+                            <p className="procedure-description">{procedure.description}</p>
                         </div>
                     )
                 })}

@@ -5,7 +5,7 @@ import bbqking_logo from '../images/food_court_pictures/bbqking_logo.png';
 import chiuquonbakery_logo from '../images/food_court_pictures/chiuquonbakery_logo.png';
 import cropculture_logo from '../images/food_court_pictures/cropculture_logo.png';
 import dama_logo from '../images/food_court_pictures/dama_logo.png';
-import coming_soon_logo from '../images/food_court_pictures/coming-soon-logo.png';
+// import coming_soon_logo from '../images/food_court_pictures/coming-soon-logo.png';
 import DSC00768 from '../images/food_court_pictures/312_FISH_MARKET/DSC00768.jpg';
 import DSC00788 from '../images/food_court_pictures/312_FISH_MARKET/DSC00788.jpg';
 import DSC00802 from '../images/food_court_pictures/312_FISH_MARKET/DSC00802.jpg';
@@ -68,15 +68,16 @@ const vendors = [
         instagram: "https://www.instagram.com/damaeats/",
         facebook: null,
         images: vendorImages.dama 
-    },
-    {
-        name: "Fat Tiger",
-        logo: coming_soon_logo,
-        website: null,
-        instagram: null,
-        facebook: null,
-        images: vendorImages.fattiger 
     }
+    // ,
+    // {
+    //     name: "Fat Tiger",
+    //     logo: coming_soon_logo,
+    //     website: null,
+    //     instagram: null,
+    //     facebook: null,
+    //     images: vendorImages.fattiger 
+    // }
     
 ];
 
@@ -85,6 +86,7 @@ class FoodCourt extends React.Component {
         return (
             <div className="page-container" id="food-court-container">
                 <h1 className="page-title" id="food-court-title">Satisfy Your Cravings</h1>
+                <p id="food-court-subtitle">Check out these fantastic local businesses at our food court! More to come!</p>
                 <div id="vendor-list-container">
                 {vendors.map((vendor, index) => {
                     return < Vendor key={index} name={vendor.name} logo={vendor.logo} website={vendor.website} instagram={vendor.instagram} facebook={vendor.facebook} images={vendor.images}/>
@@ -95,4 +97,4 @@ class FoodCourt extends React.Component {
     }
 }
 
-export default FoodCourt;
+export default  FoodCourt;

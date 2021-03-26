@@ -30,7 +30,7 @@ export class Policy extends React.Component {
     render() {
         return (
             <div className="policy-item" key={this.props.index}>
-                <h4 className="policy-title" key={this.props.index} id={`policy-${this.props.index}`} onClick={this.handleClick}><span><img src={leaf} alt="Leaf" className="leaf"/></span><span className="policy-title-item">{this.props.title}</span><span><img src={leaf_right} alt="Leaf" className="leaf"/></span></h4>
+                <h4 className="policy-headings" key={this.props.index} id={`policy-${this.props.index}`} onClick={this.handleClick}><span><img src={leaf} alt="Leaf" className="leaf"/></span><span className="policy-title-item">{this.props.title}</span><span><img src={leaf_right} alt="Leaf" className="leaf"/></span></h4>
                 <div className="policy-content-container" key={`content-${this.props.index}`} id={`content-${this.props.index}`}>
                     <p key={`p1-${this.props.index}`} className="policy-content">{this.state.showPolicy ? this.props.content : ""}</p>
                     <p key={`p2-${this.props.index}`} className="policy-content-middle">{this.state.showPolicy ? this.props.contentMiddle : ""}</p>

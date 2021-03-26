@@ -72,9 +72,10 @@ select option:focus {
     position: relative;
     z-index: 5;
 }
+
 #contact-us-title, .ways-to-contact {
     margin: 0 auto 0 auto;
-    padding: 10px 10px 30px 10px;
+    padding: 40px 10px 25px 10px;
     color: #ffffff;
     text-align: center;
     max-width: 400px;

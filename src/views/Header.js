@@ -119,10 +119,10 @@ class Header extends React.Component {
             return <NavLink key={index} className="nav-path" exact={navlink.exact} to={navlink.path} onClick={this.handleToggle}>{navlink.title}</NavLink>
         })
         return (
-            <header >
+            <header>
             <div className="header-container">
                 <a href="/">
-                    <span><img class="switch-logo" id="header-logo" src={WHITE_88_ONLY} alt="88 Marketplace Logo" /></span>
+                    <span><img className="switch-logo" id="header-logo" src={WHITE_88_ONLY} alt="88 Marketplace Logo" /></span>
                 </a>
                 <a href="#top" id="nav-toggle-bar" onClick={this.handleToggle} >
                     <span className="hamburger"></span>

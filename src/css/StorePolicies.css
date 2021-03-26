@@ -1,5 +1,4 @@
 #store-policies-container {
-    margin: 0 10px;
     display: flex;
     flex-direction: column;
 }
@@ -13,7 +12,7 @@
     padding: 0 10px 0px 10px;
 }
 
-.policy-title {
+.policy-headings {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -44,11 +43,10 @@
         padding: 30px;
         text-align: center;
         color: #ffffff;
-        background: #3d9e55c7;
         background: #3d9e56;
     }
 
-    .policy-title:hover {
+    .policy-headings:hover {
         cursor: pointer;
     }
 
@@ -56,26 +54,26 @@
         width: 60px;
         padding: 0 25px 0px 25px;
     }
-    .policy-title {
-        font-size: 1.2em;
-        padding-bottom: 10px;
+    .policy-headings {
+        font-size: 1.4rem;
         justify-content: space-evenly;
     }
     .policy-title-item {
         width: 20vw;
         text-align: center;
     }
-
-    .policy-content, .policy-content-end, .policy-content-container{
-        margin: 5px 20px 10px 20px;
-    }
-
     .policy-content-container {
-        font-size: 1.1em;
+        width: 60vw;
+        margin: auto;
+        font-size: 1.1rem;
         text-align: left;
     }
 
+    .policy-content, .policy-content-end {
+        margin: 5px 20px 10px 20px;
+    }
+
     .policy-content-middle {
-        margin:  20px 0 30px 150px;
+        margin:  15px 0 30px 35px;
     }
 }

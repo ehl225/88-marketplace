@@ -1,3 +1,4 @@
+
 .home-weekly-ad {
     width: 100%;
     height: 150px;
@@ -12,22 +13,80 @@
 .home-weekly-ad-inner p {
     width: 100%;
     color: #ffffff;
-    padding-top: 120px;
+    padding-top: 115px;
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
 
 .home-weekly-ad-inner p span {
+    display: block;
     width: 100%;
-    text-align: justify;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.404);
 }
+
 .covid-procedures {
     background-color: #a9a9a9;
     color: #ffffff;
+    padding: 20px 10px 60px 10px;
+}
+
+.covid-procedures-title {
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+.procedure-info {
+    padding-bottom: 10px;
+}
+.procedure {
     padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.procedure-description  {
+    padding-left: 20px;
 }
 
 @media only screen and (min-width: 901px ) {
     .home-weekly-ad {
         height: 250px;
     }
+
+    .home-weekly-ad-inner p {
+        padding-top: 190px;
+        font-size: 2.8rem;
+    }
+    .home-weekly-ad-inner p span {
+        text-align: center;
+    }
+
+    .covid-procedures {
+        background-color: #a9a9a9;
+        color: #ffffff;
+        padding: 40px 20px 60px 20px;
+        font-size: 1.5rem;
+
+    }
+    
+    .covid-procedures-title {
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+    .procedure-info {
+        padding-bottom: 10px;
+    }
+    .procedure {
+        padding: 15px 0 15px 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+    }
+    .procedure-description  {
+        padding-left: 20px;
+    }
+    
+    
 }
