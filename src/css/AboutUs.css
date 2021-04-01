@@ -54,8 +54,7 @@
 @media only screen and (min-width: 901px) {
     #about-us-container {
         height: 100%;
- /*     background-image: url("../images/BL5K4509edited.jpg");
-  */
+        background-image: url("../images/BL5K4509edited.jpg");
         background-size: 100% auto;
         opacity: 90%;
         display: flex;
@@ -88,10 +87,7 @@
         font-size: 1.3em;
         padding-top: 60px;
     }
-     /* #about-us-title, .about-us-inner-info, .store-inner-info, #google-map {
-        margin: 38px 20px 10px 10px;
-    }
-    */
+
     #about-us-title, .about-us-inner-info {
         margin-left: 80px;
     } 

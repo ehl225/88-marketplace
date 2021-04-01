@@ -1,5 +1,6 @@
 import React from 'react';
 const waysToContact = "Hello! If you would like to get in touch with us, please fill out the form below. We will get back to you as soon as possible. Alternatively, you can call or stop by in person.";
+
 class ContactUs extends React.Component {
     render() {
         return (
@@ -22,7 +23,6 @@ class ContactUs extends React.Component {
                         <button id="contact-form-button">Submit</button>
                     </form>
                 </div>
- 
             </div>
         )
     }
