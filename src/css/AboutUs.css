@@ -1,7 +1,7 @@
 #about-us-container {
     height: 100%;
     width: 100%;
-    background: url("../images/BL5K4509edited.jpg");
+    background-image: url("../images/BL5K4509edited.jpg");
     background-size: auto 100%;
     opacity: 90%;
     display: flex;
